@@ -13,7 +13,7 @@ namespace PadawansTask12
                 throw new ArgumentException();
             for(int i=0; i < source.Length; i++)
             {
-                Regex character = new Regex(source.Substring(i, 1));
+                Regex character = new Regex(@source.Substring(i, 1));
                 if (character.Matches(source).Count > 1)
                 return false;
             }
